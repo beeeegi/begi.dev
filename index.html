@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang=en class=js style><meta charset=utf-8>
+<meta name="description" content="real description">
+<head>
+<script src="https://kit.fontawesome.com/05e021c6fb.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/akar-icons-fonts"></script>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="icon" type="image/x-icon" href="/assets/logo.ico">
+<title>Begi's Basement</title>
+
+<style>
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+section {
+  display: block;
+}
+
+img {
+  border-style: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+@media (min-width: 641px) {
+  .has-animations [class*=reveal-] {
+    will-change: opacity, transform;
+  }
+
+  .has-animations.is-loaded [class*=reveal-] {
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .has-animations.is-loaded [class*=reveal-].is-revealed {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.1px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 641px) {
+  h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  backface-visibility: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 481px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.container {
+  max-width: 1128px;
+}
+
+@-webkit-keyframes button-loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes button-loading {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes slideUpInModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpInModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideUpInModalBg {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpInModalBg {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.split-wrap {
+  margin-top: -24px;
+}
+
+.split-wrap:last-of-type {
+  margin-bottom: -24px;
+}
+
+.split-wrap:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.split-wrap .split-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.split-wrap .split-item .split-item-image {
+  position: relative;
+  width: 100%;
+}
+
+.split-wrap .split-item .split-item-image img {
+  height: auto;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.split-wrap .split-item .split-item-image.split-item-image-fill img {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .split-wrap.invert-mobile .split-item .split-item-content {
+    order: 1;
+    margin-bottom: 0!important;
+  }
+
+  .split-wrap.invert-mobile .split-item .split-item-image {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 641px) {
+  .split-wrap {
+    margin-top: -48px;
+  }
+
+  .split-wrap:last-of-type {
+    margin-bottom: -48px;
+  }
+
+  .split-wrap:not(:last-of-type) {
+    margin-bottom: 48px;
+  }
+
+  .split-wrap .split-item {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .split-wrap .split-item .split-item-content {
+    flex-shrink: 0;
+    width: 396px;
+    margin-bottom: 0;
+    margin-right: 64px;
+  }
+
+  .split-wrap .split-item .split-item-image {
+    min-width: 436px;
+  }
+
+  .split-wrap:not(.invert-desktop) .split-item:nth-child(even),
+  .split-wrap.invert-desktop .split-item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  .split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-content,
+  .split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-content {
+    order: 1;
+    margin-left: 64px;
+    margin-right: 0;
+  }
+
+  .split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image img,
+  .split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image svg,
+  .split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image video,
+  .split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image img,
+  .split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image svg,
+  .split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image video {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 821px) {
+  .container .split-wrap .split-item .split-item-content {
+    width: 488px;
+  }
+
+  .container .split-wrap .split-item .split-item-image {
+    min-width: 528px;
+  }
+}
+
+.section-inner {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 641px) {
+  .section-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+[class*=illustration-] {
+  position: relative;
+}
+
+[class*=illustration-]::after {
+  pointer-events: none;
+}
+
+[class*=illustration-element-]::after {
+  z-index: -1;
+}
+
+[class*=illustration-section-]::after {
+  z-index: -2;
+}
+
+.split-wrap .split-item-image img {
+  border-radius: 3px;
+  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3);
+}
+
+.split-wrap .split-item-image.is-3d img {
+  will-change: transform;
+  transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.split-wrap .split-item-image.is-3d img:hover,
+.split-wrap .split-item-image.is-3d svg:hover,
+.split-wrap .split-item-image.is-3d video:hover {
+  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3)!important;
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(0) translateY(0)!important;
+}
+
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d img,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d svg,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d video,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d img,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d svg,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d video {
+  box-shadow: -24px 48px 88px rgba(139, 0, 33, 0.3);
+  transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotateZ(-7deg) scaleY(0.9) scaleX(0.95) translateX(3%) translateY(-3%);
+}
+
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d img,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d svg,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d video,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d img,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d svg,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d video {
+  box-shadow: 24px 48px 88px rgba(139, 0, 33, 0.3);
+  transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+}
+
+@media (max-width: 640px) {
+  .features-split .split-wrap.invert-mobile .split-item .split-item-image {
+    margin-bottom: 48px;
+  }
+}
+
+.center-content {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .center-content-mobile {
+    text-align: center;
+  }
+}
+
+.sf-hidden {
+  display: none!important;
+}
+
+@media screen and (max-width:900px){#logoSection{visibility:hidden}}
+</style>
+
+</head>
+<link rel="stylesheet" href="styles.css">
+<body class="has-animations is-loaded" data-new-gr-c-s-check-loaded=14.1024.0 data-gr-ext-installed id="e_background">
+
+  <nav>
+    <div class="logo">
+      <h2>B e g i</h4>
+      <p>learning through experimentation</p>
+    </div>
+  </nav>
+
+  <main>
+    <div class="gare"></div>
+    <div class="shida"></div>
+    <div class="realuri"></div>
+  </main>
+  <center><hr class="zd"></center>
+
+
+
+  <!-- proeqtebis seqcia -->
+  <section class="features-split section">
+        <div class=container>
+            <div class="features-split-inner section-inner">
+                <!-- proeqtebis div -->
+                <div class="split-wrap invert-mobile">
+                    <!-- biblioteka -->
+                    <div class="split-item reveal-scale-up is-revealed">
+                        <div class="split-item-content center-content-mobile">
+                            <h3 class="mt-0 mb-16">
+                                <a href="https://biblioteka.begi.dev" target="_blank">Mystical Library</a>
+                            </h3>
+                            <p class=desc>
+                              A site that includes all the mystical creatures that do not exist in real life, or their existence is doubted. It is very difficult to write all the creatures physically, the site is systematically updated, so mythological/mystical creatures are added to our catalog over time.
+                              <br>[For now, only in Georgian]
+                            </p>
+                        </div>
+                        <div class="split-item-image split-item-image-fill is-3d">
+                            <img src="/assets/biblioteka.png">
+                        </div>
+                    </div>
+                    <!-- ZeruaS Cheat -->
+                    <div class="split-item reveal-scale-up is-revealed">
+                        <div class="split-item-content center-content-mobile">
+                            <h3 class="mt-0 mb-16">
+                                <a href="http://zeruas.begi.dev" target="_blank" rel="noopener noreferrer">ZeruaS Cheat</a>
+                            </h3>
+                            <p class=desc>
+                                Website for cheat in CS:GO
+                                <br>[For now, only in Georgian]
+                            </p>
+                        </div>
+                        <div class="split-item-image split-item-image-fill is-3d">
+                            <img src="/assets/zeruas.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+  </section>
+
+  <!-- <section class="gafuweba">
+    <style style="display: block; white-space: pre;" contenteditable="">
+      *{
+        font-size: large;
+        color: red;
+      }
+    </style>
+  </section> -->
+
+  <center><hr class="fexi"></center>
+  <footer>
+    <div class="social">
+      <h4>Socials</h4>
+      <div class="socials">
+        <a href="https://www.instagram.com/begi.dll/" target="_blank"><i class="ai-instagram-fill"></i></a>
+        <a href="https://github.com/saur0nnn" target="_blank"><i class="ai-github-fill"></i></a>
+        <a href=""><i class="ai-discord-fill" title="Begi#4444"></i></a>
+      </div>
+      <p>contact@begi.dev</p>
+    </div>
+
+    <div class="domain">
+      <h4>Subdomains</h4>
+      <div class="asd">
+        <a href="https://biblioteka.begi.dev" target="_blank">biblioteka.begi.dev</a>-- Mystical library
+        <br>
+        <a href="https://zeruas.begi.dev" target="_blank">zeruas.begi.dev</a>-- CS:GO cheat website
+        <br>
+        <a href="https://library.begi.dev" target="_blank">library.begi.dev</a>-- Friend's website ;)
+        <br>
+        <a href="https://trojan.begi.dev" target="_blank">trojan.begi.dev</a>-- You Are An Idiot virus as a website
+      </div>
+    </div>
+  </footer>
+
+  <div class="credits">
+    <p>
+        made with love by Begi
+    </p>
+  </div>
+
+</body>
+</html>

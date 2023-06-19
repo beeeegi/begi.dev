@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+colors
+    #EEEBDD
+    #810000
+    #630000
+    #1B1717
+*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#e_background {
+    background:#000 url(./assets/sky.jpg) repeat 5% 5%;
+    position:relative;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-100;
+    -webkit-animation:stars-anim 600s infinite linear;
+    -moz-animation:stars-anim 600s infinite linear;
+    -o-animation:stars-anim 600s infinite linear;
+    animation:stars-anim 600s infinite linear   
+}
+
+.links{
+    color: #FF003D;
+}
+
+
+
+
+
+@media only screen and (max-width:480px){}
+@media only screen and (min-width:481px) and (max-width:767px){}
+@-webkit-keyframes moon-anim{from{background-position:0 2%}to{background-position:110% 2%}}
+@-moz-keyframes moon-anim{from{background-position:0 2%}to{background-position:110% 2%}}
+@-o-keyframes moon-anim{from{background-position:0 2%}to{background-position:110% 2%}}
+@keyframes moon-anim{from{background-position:0 2%}to{background-position:110% 2%}}
+@-webkit-keyframes stars-anim{from{background-position:5% 600%}to{background-position:1300% 5%}}
+@-moz-keyframes stars-anim{from{background-position:5% 600%}to{background-position:1300% 5%}}
+@-o-keyframes stars-anim{from{background-position:5% 600%}to{background-position:1300% 5%}}
+@keyframes stars-anim{from{background-position:5% 600%}to{background-position:1300% 5%}}
+@-webkit-keyframes light{0%{opacity:.1}25%{opacity:.35}50%{opacity:.95}100%{opacity:.2}}
+@-moz-keyframes light{0%{opacity:.1}25%{opacity:.35}50%{opacity:.95}100%{opacity:.2}}
+@-o-keyframes light{0%{opacity:.1}25%{opacity:.35}50%{opacity:.95}100%{opacity:.2}}
+@keyframes light{0%{opacity:.1}25%{opacity:.35}50%{opacity:.95}100%{opacity:.2}}
+
+
+    .desc{
+        color: #EEEBDD;
+    }
+
+    .yvavili{
+        max-width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* real real real */
+body{position:absolute}
+
+nav{
+    margin-top: 25px;
+    text-align: center;
+}
+
+main{
+    position: relative;
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.section a{
+    text-decoration: none;
+    color: #810000;
+}
+
+.section a:hover{
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    clear: both;
+    color: #630000;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+nav .logo h2, p{
+    color: #810000;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .gare{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 707px;
+    height: 707px;
+    top: 75px;
+
+
+    border: 37px solid #810000;
+    border-radius: 50%;
+}
+
+main .shida{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 707px;
+    height: 707px;
+    top: 75px;
+
+
+    border: 37px solid #810000;
+    border-radius: 50%;
+    filter: blur(40px);
+}
+
+main .realuri{
+    position: relative;
+    width: 736px;
+    height: 786px;
+    top: 80px;
+
+    background: url(/assets/image\ 1.png);
+}
+
+.zd{
+    width: 75%;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-bottom: 200px;
+}
+
+.fexi{
+    width: 75%;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+    color: #EEEBDD;
+    margin-left: 500px;
+    margin-bottom: 5px;
+    margin-right: 500px;
+    margin-top: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: darkred;
+    margin: 5px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.racxa{
+    width: 300px;
+}
+
+.domain{
+    display: block;
+    justify-content: center;
+}
+
+.domain h4{
+    padding-bottom: 15px;
+}
+
+.asd{
+    font-size: medium;
+    display: block;
+    justify-content: left;
+}
+
+.credits{
+    text-align: center;
+}
+
+.credits p{
+    font-size: small;
+}
+
+.socials{
+    font-size: xx-large;
+}
