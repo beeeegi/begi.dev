@@ -158,7 +158,7 @@ main .realuri{
     height: 786px;
     top: 80px;
 
-    background: url(/assets/image\ 1.png);
+    background: url(/assets/real.png);
 }
 
 .desc{
@@ -237,6 +237,17 @@ footer a:hover{
     cursor: pointer;
 }
 
+.socials, .mail{
+  position: relative;
+  top: 15px;
+}
+
+.mail{
+  position: relative;
+  top: 30px;
+}
+
+
 .about > .magic {
   display: inline-block;
   position: relative;
@@ -278,7 +289,9 @@ footer a:hover{
   white-space: nowrap;
 }
 
-
+.damatebiti{
+  color: var(--bright);
+}
 
 
 
@@ -675,4 +688,61 @@ p {
   display: none!important;
 }
 
-@media screen and (max-width:900px){#logoSection{visibility:hidden}}
+
+.mail{
+  position: relative;
+  top: 30px;
+}
+
+.socials, .mail{
+  position: relative;
+  top: 15px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  nav, main, .zd{
+    left: 55px;
+    position: relative;
+  }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .domain{
+    position: relative;
+    left: 300px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+
+  footer{
+    
+    width: max-content;
+  }
+
+  .social{
+    
+    position: relative;
+    left: ;
+  }
+
+  .domain{
+    
+  }
+
+}
