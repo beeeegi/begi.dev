@@ -180,15 +180,12 @@ main .realuri{
 }
 
 footer{
-    text-align: center;
-    color: #EEEBDD;
-    margin-left: 500px;
-    margin-bottom: 5px;
-    margin-right: 500px;
-    margin-top: 30px;
-    height: 300px;
-    display: flex;
-    justify-content: space-between;
+  text-align: center;
+  color: #EEEBDD;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer a{
@@ -206,19 +203,13 @@ footer a:hover{
     width: 300px;
 }
 
-.domain{
-    display: block;
-    justify-content: center;
-}
-
 .domain h4{
     padding-bottom: 15px;
 }
 
 .asd{
     font-size: medium;
-    display: block;
-    justify-content: left;
+
 }
 
 .credits{
@@ -293,6 +284,152 @@ footer a:hover{
   color: var(--bright);
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}
+
+@media only screen and (min-width: 1800px) {
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 821px) {
+  .container .split-wrap .split-item .split-item-content {
+    width: 488px;
+  }
+
+  .container .split-wrap .split-item .split-item-image {
+    min-width: 528px;
+  }
+}
+
+.section-inner {
+  position: relative;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 641px) {
+  .section-inner {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+}
+
+[class*=illustration-] {
+  position: relative;
+}
+
+[class*=illustration-]::after {
+  pointer-events: none;
+}
+
+[class*=illustration-element-]::after {
+  z-index: -1;
+}
+
+[class*=illustration-section-]::after {
+  z-index: -2;
+}
+
+.split-wrap .split-item-image img {
+  border-radius: 3px;
+  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3);
+}
+
+.split-wrap .split-item-image.is-3d img {
+  will-change: transform;
+  transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.split-wrap .split-item-image.is-3d img:hover,
+.split-wrap .split-item-image.is-3d svg:hover,
+.split-wrap .split-item-image.is-3d video:hover {
+  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3)!important;
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(0) translateY(0)!important;
+}
+
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d img,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d svg,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d video,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d img,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d svg,
+.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d video {
+  box-shadow: -24px 48px 88px rgba(139, 0, 33, 0.3);
+  transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotateZ(-7deg) scaleY(0.9) scaleX(0.95) translateX(3%) translateY(-3%);
+}
+
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d img,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d svg,
+.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d video,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d img,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d svg,
+.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d video {
+  box-shadow: 24px 48px 88px rgba(139, 0, 33, 0.3);
+  transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+}
+
+@media (max-width: 640px) {
+  .features-split .split-wrap.invert-mobile .split-item .split-item-image {
+    margin-bottom: 48px;
+  }
+}
+
+.center-content {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+  .center-content-mobile {
+    text-align: center;
+  }
+}
+
+.sf-hidden {
+  display: none!important;
+}
+
+
+.mail{
+  position: relative;
+  top: 30px;
+}
+
+.socials, .mail{
+  position: relative;
+  top: 15px;
+}
 
 
 
@@ -582,167 +719,4 @@ p {
   .split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image video {
     margin-left: auto;
   }
-}
-
-@media (min-width: 821px) {
-  .container .split-wrap .split-item .split-item-content {
-    width: 488px;
-  }
-
-  .container .split-wrap .split-item .split-item-image {
-    min-width: 528px;
-  }
-}
-
-.section-inner {
-  position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-@media (min-width: 641px) {
-  .section-inner {
-    padding-top: 88px;
-    padding-bottom: 88px;
-  }
-}
-
-[class*=illustration-] {
-  position: relative;
-}
-
-[class*=illustration-]::after {
-  pointer-events: none;
-}
-
-[class*=illustration-element-]::after {
-  z-index: -1;
-}
-
-[class*=illustration-section-]::after {
-  z-index: -2;
-}
-
-.split-wrap .split-item-image img {
-  border-radius: 3px;
-  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3);
-}
-
-.split-wrap .split-item-image.is-3d img {
-  will-change: transform;
-  transition: all 0.45s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.split-wrap .split-item-image.is-3d img:hover,
-.split-wrap .split-item-image.is-3d svg:hover,
-.split-wrap .split-item-image.is-3d video:hover {
-  box-shadow: 0 48px 88px rgba(139, 0, 33, 0.3)!important;
-  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(0) translateY(0)!important;
-}
-
-.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d img,
-.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d svg,
-.split-wrap:not(.invert-desktop) .split-item:nth-child(even) .split-item-image.is-3d video,
-.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d img,
-.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d svg,
-.split-wrap.invert-desktop .split-item:nth-child(odd) .split-item-image.is-3d video {
-  box-shadow: -24px 48px 88px rgba(139, 0, 33, 0.3);
-  transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotateZ(-7deg) scaleY(0.9) scaleX(0.95) translateX(3%) translateY(-3%);
-}
-
-.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d img,
-.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d svg,
-.split-wrap:not(.invert-desktop) .split-item:nth-child(odd) .split-item-image.is-3d video,
-.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d img,
-.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d svg,
-.split-wrap.invert-desktop .split-item:nth-child(even) .split-item-image.is-3d video {
-  box-shadow: 24px 48px 88px rgba(139, 0, 33, 0.3);
-  transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
-}
-
-@media (max-width: 640px) {
-  .features-split .split-wrap.invert-mobile .split-item .split-item-image {
-    margin-bottom: 48px;
-  }
-}
-
-.center-content {
-  text-align: center;
-}
-
-.mt-0 {
-  margin-top: 0;
-}
-
-.mb-16 {
-  margin-bottom: 16px;
-}
-
-@media (max-width: 640px) {
-  .center-content-mobile {
-    text-align: center;
-  }
-}
-
-.sf-hidden {
-  display: none!important;
-}
-
-
-.mail{
-  position: relative;
-  top: 30px;
-}
-
-.socials, .mail{
-  position: relative;
-  top: 15px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  nav, main, .zd{
-    left: 55px;
-    position: relative;
-  }
-
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .domain{
-    position: relative;
-    left: 300px;
-  }
-}
-
-@media only screen and (min-width: 1800px) {
-
-  footer{
-    
-    width: max-content;
-  }
-
-  .social{
-    
-    position: relative;
-    left: ;
-  }
-
-  .domain{
-    
-  }
-
 }
