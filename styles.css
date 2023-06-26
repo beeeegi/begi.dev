@@ -232,7 +232,6 @@ footer a:hover{
 .mail{
   position: relative;
   cursor: pointer;
-  top: 30px;
 }
 
 
@@ -374,21 +373,17 @@ margin-top: 0;
 margin-bottom: 16px;
 }
 
-
-
 .sf-hidden {
 display: none!important;
 }
 
-
-.mail{
-position: relative;
-top: 30px;
+.socials, .mail{
+  position: relative;
+  top: 55px;
 }
 
-.socials, .mail{
-position: relative;
-top: 15px;
+.mail{
+  margin-top: 15px;
 }
 
 
